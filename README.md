@@ -1,4 +1,4 @@
-# Hi there 👋, I'm Ujjwal Tyagi
+# Hi there, I'm Ujjwal Tyagi
 
 **Web & AI Developer | Full-Stack Engineer | Computer Vision Enthusiast**
 
