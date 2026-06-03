@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎭 Random Joke Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <div class="container">
+        <div class="joke-card">
+            <!-- Header -->
+            <div class="header">
+                <h1>🎭 Joke Generator</h1>
+                <p class="subtitle">Get ready to laugh! 😂</p>
+            </div>
+
+            <!-- Loading Animation -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Fetching a joke for you...</p>
+            </div>
+
+            <!-- Joke Display -->
+            <div id="jokeDisplay" class="joke-display">
+                <div id="setup" class="joke-text"></div>
+                <div id="delivery" class="joke-text delivery"></div>
+                <div id="singleJoke" class="joke-text single"></div>
+            </div>
+
+            <!-- Joke Type Selection -->
+            <div class="controls">
+                <label for="jokeType">Select Joke Type:</label>
+                <select id="jokeType">
+                    <option value="Any">Any</option>
+                    <option value="general">General</option>
+                    <option value="programming">Programming</option>
+                    <option value="knock-knock">Knock-Knock</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button id="newJokeBtn" class="btn btn-primary">
+                    <span class="btn-text">Get New Joke</span>
+                    <span class="btn-icon">🎲</span>
+                </button>
+                <button id="copyBtn" class="btn btn-secondary">
+                    <span class="btn-text">Copy Joke</span>
+                    <span class="btn-icon">📋</span>
+                </button>
+                <button id="shareBtn" class="btn btn-secondary">
+                    <span class="btn-text">Share</span>
+                    <span class="btn-icon">🔗</span>
+                </button>
+            </div>
+
+            <!-- Joke Counter -->
+            <div class="joke-counter">
+                <p>Jokes Generated: <span id="jokeCount">0</span></p>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error" class="error hidden"></div>
+        </div>
+
+        <!-- Joke History -->
+        <div class="history-card">
+            <h2>📜 Recent Jokes</h2>
+            <div id="jokeHistory" class="joke-history">
+                <p class="placeholder">Your recent jokes will appear here...</p>
+            </div>
+            <button id="clearHistoryBtn" class="btn btn-small btn-danger hidden">Clear History</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
